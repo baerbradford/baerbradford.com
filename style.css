@@ -10,12 +10,27 @@ body {
 	width: 100%;	
 }
 
+.sprite {
+	background-image: url(sprites.png);
+	height: 128px;
+	width: 128px;
+}
+
 #background {
 	background-image: url(background.png);
 	background-size:   cover;                    
     background-position: top left; 
 	width: 100%;
 	height: 100%;	
+}
+
+#player {
+	background-position: 0px 0px;
+	height: 180px;
+	left: -600px;
+	position: absolute;
+	top: 20px;
+	width: 275px;
 }
 
 #score {
