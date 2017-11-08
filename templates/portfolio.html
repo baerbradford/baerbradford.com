@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block body %}
+    {% for project in projects %}
+        <article class="post">
+            <a class="post-link" href="{{ 'project_' + project.url }}" title="{{ project.project }}"></a>
+            {% if project.image is not none %}
+                <div class="blog_image" style="background-image: url({{ project.image }})"></div>
+            {% endif %}
+            <div {%  if project.image is not none %}class="preview"{% endif %}>
+                <div class="one_box">
+                    <h2>{{ project.project }}</h2>
+                    {{ project.content }}
+                </div>
+            </div>
+        </article>
+    {% endfor %}
+{% endblock %}

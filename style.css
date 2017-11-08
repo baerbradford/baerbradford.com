@@ -1,48 +1,79 @@
-html {
-	height: 100%;
-}
-
 body {
-	background-color: #012138;
-	font-family: 'Press Start 2P', cursive;
-	height: 100%;
-	margin: 0px;
-	width: 100%;	
+	font-family: 'Source Code Pro', sans-serif;
+	color: black;	
+	padding: 10px 30px;
 }
 
-.sprite {
-	background-image: url(sprites.png);
-	height: 128px;
-	width: 128px;
+.portfolio_image {
+    float: left;
+    height: 100px;
+    margin-right: 20px;
 }
 
-#background {
-	background-image: url(background.png);
-	background-size:   cover;                    
-    background-position: top left; 
-	width: 100%;
-	height: 100%;	
+ul {
+	list-style: none;
 }
 
-#player {
-	background-position: 0px 0px;
-	height: 180px;
-	left: -600px;
-	position: absolute;
-	top: 20px;
-	width: 275px;
+.keyword {
+	color: #36B1C0;
 }
 
-#score {
-	position: absolute;
-	z-index: 10;
-	left: 50%;
-	top: 3%;
-	transform: translate(-50%, 0%);
+.variable {
+	color: #6D968D;
 }
 
-h1 {
-	margin: .5em;
+.constant {
+	color: red;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+.whiteSpace {
+	height: 100px;
+}
+
+.centerWrapper {
+    position: absolute;
+    left: 50%;
+    width: 55%;
+    min-width: 400px;
+    padding-bottom: 50px;
+}
+
+#main {
+	border: 1px #444 solid;
+	padding: 15px;
+    padding-right: 50px;
+    background-color: black;
+    background: rgba(0, 0, 0, .55);
+    margin: 0px auto;
+    text-align: justify;
+    z-index: 1;
+    position: relative;
+    left: -50%;
+}
+
+.portfolioSpacer {
+    height: 40px;
+}
+
+.technologies {
+    font-size: small;
+    color: #292f3f;    
+}
+
+.resumeButton {
+    padding-top: 5px;
+    padding-bottom: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+    margin: 0px auto;
+    width: 65%;
+    background-color: #292f3f;
+    border-radius: 20px;
+    color: lightgrey;
+    text-align: center;
+}
+
+a:link {color:black;}
+a:visited {color:black;}
+a:hover {color:black;}
+a:active {color:black;}
