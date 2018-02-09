@@ -1,0 +1,36 @@
+{
+  "name": "baerbradford.com",
+  "version": "1.0.0",
+  "description": "\"Portfolio and personal website.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baerbradford/baerbradford.com.git"
+  },
+  "author": "Baer Bradford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baerbradford/baerbradford.com/issues"
+  },
+  "homepage": "https://baerbradford.com",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-foreach": "^0.1.0",
+    "gulp-jsvalidate": "^3.0.0",
+    "gulp-markdown": "^1.2.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-tap": "^1.0.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webserver": "^0.9.1",
+    "handlebars": "^4.0.10",
+    "underscore": "^1.8.3"
+  }
+}
