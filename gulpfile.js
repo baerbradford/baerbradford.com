@@ -77,7 +77,6 @@ function cName() {
 
 function css() {
     return gulp.src([
-            'content/css/font-awesome.min.css',
             'content/css/railscasts.min.css',
             'content/css/scribbler-global.css',
             'content/css/scribbler-doc.css',

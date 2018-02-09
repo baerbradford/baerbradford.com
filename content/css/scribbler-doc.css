@@ -1,10 +1,10 @@
-html, body {
+/* html, body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* layout */
+/* layout *//*
 .header {
   border-bottom: 1px solid var(--code-bg-color);
   grid-template-columns: 1fr 150px 60% 1fr;
@@ -15,7 +15,7 @@ html, body {
   flex-grow: 1;
 }
 
-/* logo */
+/* logo *//*
 .logo {
   font-weight: 900;
   color: var(--primary-color);
@@ -27,7 +27,7 @@ html, body {
   font-weight: 300;
 }
 
-/* menu */
+/* menu *//*
 .menu {
   grid-template-columns: 1fr 180px 60% 1fr;
 }
@@ -36,7 +36,7 @@ html, body {
   padding: 1.5rem 1rem;
 }
 
-/* doc */
+/* doc *//*
 .doc__bg {
   position: fixed;
   top: 0;
@@ -101,7 +101,7 @@ html, body {
     padding-bottom: 0.5rem;
   }
   .doc__nav ul.fixed {
-    /* nutralized the fixed menu for mobile*/
+    /* nutralized the fixed menu for mobile*//*
     position: relative;
     top: 0;
   }
@@ -112,4 +112,4 @@ html, body {
   .doc__nav .selected:after {
     display: none;
   }
-}
+} */
