@@ -19,7 +19,13 @@ var webServer = require('gulp-webserver');
 
 var outputDir = 'docs_new/'
 
+gulp.task('assets', ['css', 'img', 'js']);
+
 gulp.task('build', ['cname', 'homepage']);
+
+gulp.task('clean', ['clean:assets', 'clean:cname', 'clean:html']);
+
+gulp.task('clean:assets', cleanAssets);
 
 gulp.task('clean:cname', cleanCName);
 
@@ -27,13 +33,30 @@ gulp.task('clean:html', cleanHtml);
 
 gulp.task('cname', ['clean:cname'], cName);
 
-gulp.task('homepage', ['clean:html'], homepage);
+gulp.task('css', ['clean:assets'], css);
+
+gulp.task('homepage', ['assets', 'clean:html'], homepage);
+
+gulp.task('img', ['clean:assets'], img);
+
+gulp.task('js', ['clean:assets'], js);
 
 gulp.task('default', ['build']);
 
 gulp.task('serve', ['default'], serve);
 
 gulp.task('watch', ['default'], watch);
+
+function cleanAssets() {
+    return gulp.src([
+            outputDir + 'css',
+            outputDir + 'img',
+            outputDir + 'js'
+        ], {
+            read: false
+        })
+        .pipe(clean());
+}
 
 function cleanCName() {
     return gulp.src(outputDir + 'CNAME')
@@ -52,8 +75,37 @@ function cName() {
         .pipe(gulp.dest(outputDir));
 }
 
+function css() {
+    return gulp.src([
+            'content/css/font-awesome.min.css',
+            'content/css/railscasts.min.css',
+            'content/css/scribbler-global.css',
+            'content/css/scribbler-doc.css',
+            'content/css/scribbler-landing.css'
+        ])
+        .pipe(concat('main.min.css'))
+        .pipe(cssMin())
+        .pipe(gulp.dest(outputDir));
+}
+
 function homepage() {
     return gulp.src(['content/index.html'])
+        .pipe(gulp.dest(outputDir));
+}
+
+function img() {
+    return gulp.src(['content/img/**/*'])
+        .pipe(gulp.dest(outputDir + 'img'));
+}
+
+function js() {
+    return gulp.src([
+            'content/js/scribbler.js'
+        ])
+        .pipe(jsValidate())
+        .pipe(uglify())
+        .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+        .pipe(concat('main.min.js'))
         .pipe(gulp.dest(outputDir));
 }
 
