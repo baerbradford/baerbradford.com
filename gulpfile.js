@@ -31,6 +31,10 @@ gulp.task('homepage', ['clean:html'], homepage);
 
 gulp.task('default', ['build']);
 
+gulp.task('serve', ['default'], serve);
+
+gulp.task('watch', ['default'], watch);
+
 function cleanCName() {
     return gulp.src(outputDir + 'CNAME')
         .pipe(clean());
@@ -53,6 +57,32 @@ function homepage() {
         .pipe(gulp.dest(outputDir));
 }
 
+function serve() {
+    var webConfig = {
+        livereload: true,
+        middleware: function (req, res, next) {
+            if (req.url.indexOf('.') >= 0) {
+                // Already has extension. Don't modify.
+                next();
+                return;
+            }
+
+            // If `/` is requested. append index to it
+            if (req.url === '/') {
+                req.url = '/index';
+            }
+            // Append .html.
+            const url = req.url + '.html';
+            req.url = url;
+            next();
+        },
+        open: 'http://localhost',
+        port: 80
+    };
+    return gulp.src(outputDir)
+        .pipe(webServer(webConfig));
+}
+
 function stringSrc(filename, string) {
     var src = require('stream').Readable({
         objectMode: true
@@ -67,4 +97,8 @@ function stringSrc(filename, string) {
         this.push(null)
     }
     return src
+}
+
+function watch() {
+    return gulp.watch(['content/**'], ['default']);
 }
