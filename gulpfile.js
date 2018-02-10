@@ -17,7 +17,7 @@ var tap = require('gulp-tap');
 var uglify = require('gulp-uglify');
 var webServer = require('gulp-webserver');
 
-var outputDir = 'docs_new/'
+var outputDir = 'docs/'
 
 gulp.task('assets', ['css', 'img', 'js']);
 
