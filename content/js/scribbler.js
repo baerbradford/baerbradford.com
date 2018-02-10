@@ -12,7 +12,7 @@ var getAll = function (selector, scope) {
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
-  var txt = 'hello world';
+  var txt = "Hello! I'm a software developer based in Fort Worth, TX.\r\nI spend my time working on a variety of projects, but my main interests lie in using technology to improve the lives of others.\r\nOutside of my work, I love dogs, cooking, video games, cars, and movies.";
   var speed = 60;
 
   function typeItOut () {

@@ -1,0 +1,298 @@
+a img {
+	border: none;
+}
+
+body {
+    margin:0;
+    padding:0;
+	overflow: hidden;
+}
+
+.arrow {
+    height: 83px;
+    width: 323px;
+    background-image: url(../images/arrow.png);
+    position: absolute;
+    top: 50px;
+    left: -300px;
+    z-index:8;
+}
+
+p {
+    font-family: sanchez;
+}
+
+.forest {
+    height:100%;
+    width: 150%;
+    background-image: url(../images/forest.jpg);
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    z-index:0;
+}
+
+.boxman {
+    height: 300px;
+    width: 260px;
+    background-image: url(../images/boxman.png);
+    position: absolute;
+    bottom: 10%;
+    left: 150px;
+    z-index:9;
+}
+
+.bottominfo {
+    position:absolute;
+    bottom:0;
+    background: white;
+    width: 100%;
+    min-height: 60px;
+    background-image: url(../images/bottomnavgradient.png);
+    z-index: 10;
+}
+
+.h1 {
+    font-family: 'Sanchez';
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 64px;
+}
+
+h2 {
+    font-family: sanchez;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 10px 10px;
+}
+
+.notop {
+    margin-top:0;
+}
+
+.leftpadding {
+    padding-left: 30px;
+}
+
+.whitetext {
+    color: white;
+}
+
+.bottominfo ul {
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    font-family: sanchez;
+    font-size: 14px;
+}
+
+.bottominfo ul li {
+    display: inline;
+    padding-right: 20px;
+}
+
+.tculogo {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 10;
+    background-image: url(../images/tculogo.png);
+    width: 150px;
+    height: 77px;
+}
+
+.menu {
+    background-color: rgba(240, 240, 240, .7);
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3f0f0f0,endColorstr=#b3f0f0f0);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3f0f0f0,endColorstr=#b3f0f0f0);
+    position: fixed;
+    left: -20%;
+    width: 35%;
+    top: -25%;
+    min-width: 380px;	
+    height: 150px;
+}
+
+#leftColumn {
+	position: absolute;
+	left: 15px;
+	width: 35%;
+}
+
+#rightColumn {
+	position: absolute;
+	right: 15px;
+	width: 35%;
+}
+
+#about {
+	display: none;
+    background-color: rgba(240, 240, 240, .7);
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3f0f0f0,endColorstr=#b3f0f0f0);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3f0f0f0,endColorstr=#b3f0f0f0);
+    position: fixed;
+    left: -20%;
+    width: 35%;
+    top: -25%;
+    min-width: 300px;
+	z-index: 10;
+}
+
+#about p {
+	padding: 30px;
+	text-align: center;
+	font-size: 16px;
+}
+
+#closeAbout {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#about a:link {color:#00F;} 
+#about a:visited {color:#00F;}
+#about a:hover {color:#00F;}
+#about a:active {color:#00F;}
+
+.bottominfo a:link {color:#FFF;text-decoration: none;} 
+.bottominfo a:visited {color:#FFF;text-decoration: none;}
+.bottominfo a:hover {color:#FFF;}
+.bottominfo a:active {color:#FFF;}
+
+#createHeader {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+}
+
+.menu ul {
+    text-align: center;
+    padding: 0 40px;
+    margin: 20px 0 24px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 0 14px;
+    background-color: rgba(250, 250, 250, .7);
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3fafafa,endColorstr=#b3fafafa);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3fafafa,endColorstr=#b3fafafa);
+    padding: 6px;
+    font-family: sanchez;
+    font-size: 15px;
+    cursor: default;
+}
+
+.menu ul li:hover {
+    background-color: rgba(255, 255, 255, 1);
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3ffffff,endColorstr=#b3ffffff);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3ffffff,endColorstr=#b3ffffff);
+    color:red;
+}
+
+.target {
+    background-image: url(../images/target.png);
+    width: 160px;
+    height: 680px;
+    top: -50px;
+    right: -15%;
+    position:absolute;
+    z-index: 8;
+}
+
+.results {
+	min-width: 225px;
+	width: 10%;
+    background-color: rgba(240, 240, 240, .7);
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3f0f0f0,endColorstr=#b3f0f0f0);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3f0f0f0,endColorstr=#b3f0f0f0);
+    position: absolute;
+    z-index:8;
+    
+	margin-top: 20%;
+    left: 10%;
+    
+	padding: 12px 10px 8px;
+    display: none;
+}
+
+.results ul {
+    padding:0;
+    margin: 0;
+}
+
+.results ul li {
+    list-style: none;
+    font-family: sanchez;
+    font-size: 16px;
+    cursor: default;
+    padding: 6px;
+    text-align: center;
+    color:red;
+}
+
+
+
+.fire{
+	display: none;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    background-color: rgba(250, 250, 250, .7);
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3fafafa,endColorstr=#b3fafafa);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3fafafa,endColorstr=#b3fafafa);
+    width: 10%;
+	min-width: 225px;
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    
+	font-weight: normal;
+    cursor: default;
+    font-family: sanchez;
+}
+
+.fire:hover {
+    background-color: red;
+    color: white;
+}
+
+.sessiontitle {
+    font-size: 12px;
+    margin: 0 0 0 10px;
+}
+
+.back {
+    top:5%;
+    left: -50px;
+    width: 100px;
+    height:40px;
+    background: url(../images/backbutton.png);
+    position: absolute;
+    z-index: 9;
+    padding-left: 74px;
+    line-height: 40px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.back:hover {
+    color:red;
+}
+
+#mask {
+  position: absolute;
+  z-index: 9;
+  background-color: #000;
+  display: none;
+  top: 0px;
+  left: 0px;
+}
+
+#passwordText {
+	background: none;
+}

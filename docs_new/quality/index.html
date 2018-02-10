@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8' />
+	
+	<title>Quality Application - TCU</title>
+	
+	<link rel='stylesheet' href='css/main.css' />
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+	<script src='js/qualityAppProject.js'></script>
+	<link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	
+	<div class="forest"></div>
+	<div class="boxman"></div>
+	<div class="tculogo"></div>
+	
+	<div class="menu modal">
+		<center><h2>Enter Password to View Data Set</h2></center>
+		<hr />
+		
+			<ul id="leftColumn">
+				<li><input id="passwordText" type="text" value="demo" /></li>
+			</ul>
+			<ul id="rightColumn">
+				<li class="viewSetLink">Submit</li>
+			</ul>
+	</div>
+	
+	<div class="bottominfo">
+		<span class="h1 leftpadding whitetext">Quality Application</span>
+		
+			<ul class="whitetext">
+				<li><a id="aboutLink" href="#">About</a></li>
+			</ul>
+	
+	</div>
+	
+	<!-- After Animation -->
+	
+	<div id="target" class="target"></div>
+	
+	<div id="results" class="results">
+		<span id="dataSetName" class="sessiontitle">Low Numbers 1</span>
+		<h2 class="notop">Sample: <span id="roundNumber">-1</span></h2>
+		<hr>
+			<ul>
+				<li id="observation1">-</li>
+				<li id="observation2">-</li>
+				<li id="observation3">-</li>
+				<li id="observation4">-</li>
+			</ul>		
+	</div>
+	
+	<div class="fire">
+		<span>Shoot Again!</span>
+	</div>
+	
+	<div class="back">Back</div>
+	
+	<!-- About Page -->
+	<div id="about" class="modal">
+		<p>This application is designed to facilitate learning in the area of quality management.  Students collect data from ten rounds of shots then develop and interpret quality control charts.  Process capability is also analyzed.</p>
+		<hr />
+		<p>
+			Designed and created by
+			<img id="createHeader" src="images/CreateLogo.png" alt="//Create Laboratories" />
+	</div>
+	
+	<div id="mask"></div>
+</body>
+
+</html>

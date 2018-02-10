@@ -25,6 +25,10 @@ nav {
   margin: -1rem auto 2rem auto;
 }
 
+.hero__description > a {
+  font-weight: bold;
+} 
+
 .hero__terminal {
   width: 60%;
   margin: -11rem auto 3rem auto;
@@ -49,6 +53,12 @@ nav {
   flex-wrap: wrap;
 }
 
+.feature-img {
+  float: right;
+  height: 80px;
+  margin-left: 20px;
+}
+
 .feature__item {
   max-width: calc(33% - 20px);
   margin: 0 20px 0 0;
@@ -60,6 +70,12 @@ nav {
 
 .feature__item p {
   margin-top: 0.5rem;
+  text-align: justify;
+}
+
+.feature__tech {
+  font-size: small;
+  color: #292f3f;    
 }
 
 /* keybinding section */
