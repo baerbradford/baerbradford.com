@@ -13,7 +13,7 @@ var getAll = function (selector, scope) {
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
   var txt = "Hello! I'm a software developer based in Fort Worth, TX.\r\nI spend my time working on a variety of projects, but my main interests lie in using technology to improve the lives of others.\r\nOutside of my work, I love dogs, cooking, video games, cars, and movies.";
-  var speed = 60;
+  var speed = 30;
 
   function typeItOut () {
     if (i < txt.length) {
