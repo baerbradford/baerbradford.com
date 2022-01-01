@@ -1,0 +1,47 @@
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+  
+code {
+    color: #E01A76;
+}
+  
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+  
+.pointer {
+      cursor: pointer;
+}
+  
+.skyline-background {
+      background-color: #aaa;
+      background-image: url('/img/faded-skyline.jpg');
+      background-size: cover;
+}
+  
+.white-with-black-outline {
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      color: white;
+  }
+  
+.black-with-white-outline {
+      text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+      color: black;
+  }
+  
+.no-link {
+      color: black;
+  }
+  
+.no-link:hover {
+      text-decoration: none;
+      color: black;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}

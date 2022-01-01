@@ -1,93 +1,128 @@
 <!doctype html>
 <html>
 	<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37270839-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-37270839-1');
+        </script>
         <meta charset="utf-8">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Baer Bradford</title>		
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
-        <link rel="stylesheet" href="main.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Baer Bradford</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
 	</head>
 	<body>
-        <nav>
-            <div class="logo"></div>
-            <ul class="menu">
-                <div class="menu__item toggle"><span></span></div>
-                <li class="menu__item"><a href="Resume.pdf" class="link link--dark"><i class="fa fa-user"></i> Resume</a></li>
-                <li class="menu__item"><a href="https://github.com/baerbradford" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1 class="hero__title">Baer Bradford</h1>
-            <p class="hero__description">Take a look at my <a href="Resume.pdf">resume</a> or shoot me an email at <a href="mailto:baer.bradford@gmail.com">baer.bradford@gmail.com</a>.</p>
-        </div>
-        <div class="hero__terminal">
-            <pre>
-                <code class="shell-session demo">> </code>
-            </pre>
-        </div>
-        
-        <div class="wrapper">
-            <div class="feature">
-                <div class="feature__item">
-                    <a href="http://finalparsec.com"><h3>Final Parsec</h3></a>
-                    <img src="img/snakes_logo.gif" class="feature-img" />
-                    <p>
-                        We're a team of two based in North Texas working on fun projects in our free time.
-                        We typically keep a focus on making video games, but we've been known to build robots and invent science fiction universes.
-                        Keep an eye on our blog or follow us on social media to see us showing off the latest progress.
-                    </p>
-                    <p class="feature__tech">[C#, Unity, Pygame]</p>
-                </div>
-                <div class="feature__item">
-                    <a href="http://riogrande.cs.tcu.edu/1213GoodNews/index.html"><h3>GoodNEWS Fort Worth</h3></a>
-                    <img src="img/goodnewsLogo1.png" class="feature-img" />
-                    <p>
-                        A mobile application targeting iOS and Android developed for the GoodNEWS program, part of the University of North Texas Health Science Center.
-                        The application promotes healthy living in the Fort Worth community, and is paired with a content management system for GoodNEWS employees.
-                    </p>
-                    <p class="feature__tech">[iOS, Android, ASP.NET MVC]</p>
-                </div>
-                <div class="feature__item">
-                    <h3>exploreMuse</h3>
-                    <img src="img/exploreMUSELogo.png" class="feature-img" />
-                    <p>
-                        A mashup which offered a simple and intuitive way to discover new music. Now defunct due to changes in APIs it relied on.
-                        This won 3rd place in the TCU Neeley School of Business' Elevator Pitch Competition.
-                    </p>
-                    <p class="feature__tech">[ASP.NET MVC, jQuery, The Echo Nest API]</p>
-                </div>
-                <div class="feature__item">
-                    <a href="./quality/index.html"><h3>Quality Application</h3></a>
-                    <img src="img/qualityApp.png" class="feature-img" />
-                    <p>
-                        Created for Texas Christian University and used by the Neeley School of Business, this app facilitates the learning of quality management.
-                    </p>
-                    <p class="feature__tech">[jQuery]</p>
-                </div>
-                <div class="feature__item">
-                    <a href="SRSPoster%20-%20HCI%20Lab%202012%20-%20Final.pdf"><h3>Where Am I?</h3></a>
-                    <img src="img/localization.png" class="feature-img" />
-                    <p>
-                        A research attempt to improve indoor localization utilizing sensors commonly included in smartphones.
-                        This was published as a poster and presented at Midwestern University's North Texas Area Student Conference and TCU's Student Research Symposium.
-                    </p>
-                    <p class="feature__tech">[iOS, Windows Phone 7, Python]</p>
+        <div>
+            <header>
+                <nav class="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3 navbar navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="/">Baer Bradford</a>
+                        <button aria-label="Toggle navigation" type="button" class="mr-2 navbar-toggler">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="d-sm-inline-flex flex-sm-row-reverse collapse navbar-collapse">
+                            <ul class="navbar-nav flex-grow">
+                                <li class="nav-item">
+                                    <a class="text-dark nav-link" href="/">Home</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <a href="http://finalparsec.com" target='_blank' rel="noopener noreferrer" class="no-link">
+                            <div class="my-3 p-3 bg-white rounded box-shadow clearfix">
+                                <p>
+                                    <img src="img/fp_logo.jpg" alt="Final Parsec" height="150" class="float-left" />
+                                    <span class="font-weight-bold">Final Parsec </span>
+                                    - We're a team of two based in North Texas working on fun projects in our free time. We typically keep a focus on making video games, but we've been known to build robots and invent science fiction universes. Keep an eye on our blog or follow us on social media to see us showing off the latest progress.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="http://riogrande.cs.tcu.edu/1213GoodNews/index.html" target='_blank' rel="noopener noreferrer" class="no-link">
+                            <div class="my-3 p-3 bg-white rounded box-shadow clearfix">
+                                <p>
+                                    <img src="img/goodnews.jpg" alt="GoodNEWS" height="150" class="float-left" />
+                                    <span class="font-weight-bold">GoodNEWS Fort Worth </span>
+                                    - A mobile application targeting iOS and Android developed for the GoodNEWS program, part of the University of North Texas Health Science Center. The application promotes healthy living in the Fort Worth community, and is paired with a content management system for GoodNEWS employees. 
+                                </p>
+                            </div>
+                        </a>
+                        <div class="my-3 p-3 bg-white rounded box-shadow clearfix">
+                            <p>
+                                <img src="img/exploremuse.jpg" alt="ExploreMuse" height="150" class="float-left" />
+                                <span class="font-weight-bold">ExploreMuse </span>
+                                - A mashup which offered a simple and intuitive way to discover new music. Now defunct due to changes in APIs it relied on. This won 3rd place in the TCU Neeley School of Business' Elevator Pitch Competition.
+                            </p>
+                        </div>
+                        <a href="quality/index.html" target='_blank' rel="noopener noreferrer" class="no-link">
+                            <div class="my-3 p-3 bg-white rounded box-shadow clearfix">
+                                <p>
+                                    <img src="img/qualityApp.jpg" alt="Quality" height="150" class="float-left" />
+                                    <span class="font-weight-bold">Quality App </span>
+                                    - Created for Texas Christian University and used by the Neeley School of Business, this app facilitates the learning of quality management. 
+                                </p>
+                            </div>
+                        </a>
+                        <a href="SRSPoster - HCI Lab 2012 - Final.pdf" target='_blank' rel="noopener noreferrer" class="no-link">
+                            <div class="my-3 p-3 bg-white rounded box-shadow clearfix">
+                                <p>
+                                    <img src="img/localization.jpg" alt="Localization" height="150" class="float-left" />
+                                    <span class="font-weight-bold">Where Am I? </span>
+                                    - A research attempt to improve indoor localization utilizing sensors commonly included in smartphones. This was published as a poster and presented at Midwestern University's North Texas Area Student Conference and TCU's Student Research Symposium.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img class="rounded-circle" src="img/baer_bw.jpg" width="140" height="140" alt="" />
+                        </div>
+                        <div class="my-3 p-3 text-center">
+                            <div class="mb-1">
+                                <a href="https://twitter.com/Final_Parsec" class="text-decoration-none" target='_blank' rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                                    </svg><span class="ml-2">
+                                        @Final_Parsec
+                                    </span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="Resume.pdf" class="text-decoration-none" target='_blank' rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+                                    </svg>
+                                    <span class="ml-2">
+                                        Resume
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="my-3 p-3 text-center">
+                            
+                        </div>
+                        <div class="my-3 p-3">
+                            <p>
+                                Hi! I'm Baer, and this is my corner of the internet.
+                                This is my place to share my life, my projects, and the things I'm interested in.
+                                Stick around if you're into software, finance, and fitness.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <script src="main.min.js"></script>
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-37270839-1']);
-            _gaq.push(['_trackPageview']);
-  
-            (function() {
-              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-          </script>
+        <script src="main.js"></script>
 	</body>
 </html>
